@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    color: white;
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+    .textdiv{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        margin-left: 7%;
+        p{
+            margin-left: 5%;
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: 4%;
+        }
+    }
+    .input-group{
+        width: auto;
+        display: flex;
+        margin-top: 2%;
+        input{
+            width: 450px;
+            height: 6vh;
+            border-radius: 20px;
+            font-size: larger;
+            /* margin-top: 5%; */
+        }
+        .input-group-text{
+            width: 20%;
+            height: 6vh;
+        }
+    }
+  }
+  .media-navbar{
+    display: none;
+  }
+
+  @media screen and (max-width: 700px){
+    .media-navbar{
+        /* background-color: red; */
+        color: black;
+        display: block;
+        width: 100%;
+        /* margin-left: 5%; */
+        height: 15vh;
+        margin-top: 12% !important;
+        align-items: center;
+        display: flex;
+        .logo{
+            width: 35%;
+            img{
+                width: 100%;
+            }
+        }
+        button{
+            width: 14%;
+            height: 6vh;
+            border: 2px solid red;
+            border-radius: 10px;
+            font-size: 22px;
+            color: white;
+            background-color: transparent;
+        }
+    }
+    nav{
+        display: none;
+    }
+    .btn-close{
+        color: red !important;
+    }
+    .offcanvas-body{
+        width: 100%;
+        height: 100%;
+        .categories{
+            width: 100%;
+            height: 6.5vh;
+            margin-top: 2%;
+            background-color: black;
+            color: #fff;
+            font-size: 25px;
+            border: 3px solid red;
+            border-radius: 20px;
+        }
+    }
+  }
+  

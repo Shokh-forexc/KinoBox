@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu-container{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    h2{
+        color: #fff;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+}
+
+.venom{
+    width: 100%;
+    height: 90vh;
+    margin-top: -1%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("https://stateless-fueradefoco.storage.googleapis.com/wp-content/uploads/2021/10/30064400/venom-2-1200.jpg");
+    .dark-overly{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        button{
+            position: absolute;
+            width: 4.5%;
+            height: 9vh;
+            font-size: 50px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border: none;
+            color: #fff;
+            background-color: red;
+            box-shadow: 0px 0px 10px 5px red;
+            margin-top: 38%;
+            margin-left: 90%;
+            transition: all .5s
+        }
+        button:focus{
+            background-color: black;
+            color: red;
+            box-shadow: 0px 0px 10px 5px black;
+        }
+    }
+}
+.cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .fourcard{
+        width: 22%;
+        height: 60vh;
+        background-color: black;
+        border: 3px solid purple;
+        margin: 1rem;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 0px red;
+    }
+}
+.slider {
+    width: 50%;
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 25%;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 80% !important;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px; 
+  }
+  
+  .react-multi-carousel-list {
+    padding: 0; 
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  
+  .react-multi-carousel-list {
+  padding: 0rem 0 1rem 0;
+  }
+  
+  .custom-dot-list-style button{
+  border: none;
+  background: rgb(255, 68, 68);
+  }
+  .react-multi-carousel-dot.react-multi-carousel-dot--active button{
+  background: rgb(255, 68, 68) !important;
+  }
+  .carousel-button {
+    width: 2.5%;
+    height: 5vh;
+    border-radius: 20px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.carousel-button:hover {
+   color: red;
+   background-color: #fff;
+}
+
+.carousel-button-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-button-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    .carousel-item{
+        width: 100%;
+        height: 85vh;
+        border-radius: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+.marketing{
+    width: 90%;
+    height: 60vh;
+    margin-left: 5%;
+    background: linear-gradient(red -10%,black);
+    border-radius: 20px;
+    margin-top: 5%;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    align-items: center;
+    img{
+        width: 30%;
+        height: 75%;
+    }
+    button{
+        width: 15%;
+        height: 6vh;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: red;
+        color: #fff;
+        margin-left: 5%;
+    }
+    .textdiv{
+        width: 60%;
+        h1{
+            color: #fff;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+        h3{
+            color: black;
+            font-weight: bold;
+            margin-left: 10%;
+        }
+    }
+    .itemtextdiv{
+        width: 50%;
+        h5{
+            display: block;
+            margin-left: 10%;
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
+.twiceabout{
+    width: 90%;
+    height: 80vh;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: #ffffff51;
+    border-radius: 20px;
+    background: linear-gradient(
+        50deg,
+        rgba(0, 0, 0, 0.836),
+        rgba(255, 0, 0, 0.5));
+    display: flex;
+    .aboutfilm{
+        width: 70%;
+        height: 80vh;
+        h3,h5{
+            position: absolute;
+            margin-left: 5%;
+            margin-top: 5%;
+            color: #fff;
+        }
+        h3{
+            margin-top: 2%;
+        }
+        .country{
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: space-between !important;
+            border-bottom: 3px solid black;
+            margin-top: 30%;
+            margin-left: 5%;
+            h3{
+                position: static;
+                margin-top: -2%;
+            }
+        }
+        .length{
+            margin-top: 3%;
+        }
+        .about{
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1%;
+            margin-left: 5%;
+            h3{
+                position: static;
+            }
+        }
+    }
+    .imgfilm{
+        position: absolute;
+        width: 32%;
+        height: 80vh;
+        background-image: url("https://cs15.pikabu.ru/post_img/big/2024/08/21/9/172425235615702909.jpg");
+        margin-left: 58%;
+        /* border-radius: 20px !important; */
+        .dark-overly{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.118);
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            img{
+                width: 75%;
+                height: 90%;
+                margin-left: 15%;
+                border-radius: 20px;
+                margin-top: 7%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 720px){
+    .venom{
+        width: 100%;
+        height: 30vh;
+        button{
+            width: 15% !important;
+            height: 7.5vh !important;
+            margin-left: 75% !important;
+        }
+    }
+    .cards{
+        width: 100%;
+        height: auto;
+        .fourcard{
+            width: 90%;
+            height: 70vh;
+        }
+    }
+    .carousel-button{
+        width: 9%;
+    }
+    .carousel{
+        width: 90%;
+        margin-left: 5%;
+        height: 30vh;
+        .carousel-item{
+            height: 30vh;
+        }
+    }
+}
