@@ -3,8 +3,6 @@ import python from '../assets/python.png';
 import react from '../assets/react.png';
 import java from '../assets/java.png';
 import htmlcss from '../assets/htmlcss.png';
-import me from '../assets/my.png';
-import Jigarm from '../assets/jgar.png';
 export const Genres = () =>{
     const all = [
         {
