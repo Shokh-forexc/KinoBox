@@ -68,7 +68,8 @@ export const Navbar = () => {
               style={{
                 height: "7vh",
                 borderTopLeftRadius: "20px",
-                borderBottomLeftRadius: "20px"
+                borderBottomLeftRadius: "20px",
+                zIndex:'5'
               }}
               type="text"
               className="form-control"
@@ -84,7 +85,8 @@ export const Navbar = () => {
                 alignItems: "center",
                 fontSize: "20px",
                 borderTopRightRadius: "20px",
-                borderBottomRightRadius: "20px"
+                borderBottomRightRadius: "20px",
+                zIndex:'999'
               }}
               className="input-group-text"
               id="basic-addon2"

@@ -78,6 +78,74 @@ const items = [
     caption: 'Slide 3',
   },
 ];
+const Movie = [
+    {
+        id: '1',
+        img:'https://lh6.googleusercontent.com/proxy/ajZjRBgT9XU1TEDSudvB5Ss74ZnqD7J0T7ElQ0WEK5oRzvkQNc5rR5zMftJPMGFQ9CVDZ4dYEzPaeRe7kypxdWaoBqMFjJ_MzFVTfiJjEYadAI6NzpgWgB3IR4jMh9G4lhIau7ibaRKdWKnecsKn_oNfqmID',
+        text:'Jon Wick 4',
+        data: '2023',
+        rate: '8.1',
+        price: '0.92 $'
+    },
+    {
+        id: '2',
+        img:"https://m.media-amazon.com/images/M/MV5BMTQzMzQxNDU2Nl5BMl5BanBnXkFtZTgwODI3NjUzMzE@._V1_.jpg",
+        text: 'The Pyramid',
+        data: '2021',
+        rate: '6.7',
+        price: '0.52 $'
+    },
+    {
+        id: '3',
+        img: "https://upload.wikimedia.org/wikipedia/en/0/00/Fast_%26_Furious_Presents_Hobbs_%26_Shaw_-_theatrical_poster.jpg",
+        text: 'Hobbs and Shaw',
+        data: '2019',
+        rate: '6.5',
+        price: '1.02 $'
+    },
+    {
+        id: '4',
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI8nsJndWjUaDgBxNBKW8cl4ng5SblKLuc-lQzWdxoq8ZtFoEX3ixo7CENnmi9iX6X1mw&usqp=CAU",
+        text:"Harry Potter",
+        data: "2011",
+        rate: '8.1',
+        price: '1.73 $'
+    },
+    {
+        id: '5',
+        img:'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgUaa0Ccb0YYetAHq371A0ZI1Uh7lE1ZvFDt2Q6UenpTZhSV5TpLhBDfhapXYQFKVY9sqbTBM68czMAl2dMa-vJ819us5_kYMJ2TZt1I4_2A',
+        text: 'Avengers',
+        data: '2018',
+        rate: '8.4',
+        price: '1.68 $'
+    },
+    {
+        id: '6',
+        img:'https://musicart.xboxlive.com/7/e8a15100-0000-0000-0000-000000000002/504/image.jpg',
+        text: 'Justice League',
+        data: '2021',
+        rate: '7.9',
+        price: '0.96 $'
+    },
+    {
+        id: '7',
+        img: 'https://m.media-amazon.com/images/M/MV5BN2FmZGVlNTgtYTllNC00YmUzLTk5YmUtNWNhMzk3ZmE2NmQ0XkEyXkFqcGc@._V1_.jpg',
+        text: 'Ghost Rider',
+        data: '2007',
+        rate: '5.3',
+        price: '0.78$'
+    },
+    {
+        id: '8',
+        img:'https://i.pinimg.com/1200x/31/07/7d/31077d2260930eeae7bb2afaaae2f503.jpg',
+        text: 'Sherlock Holmes',
+        data: '2010',
+        rate: '9',
+        price: '2.28$'
+
+    },
+]
+
 export const Menu = () =>{
     return(
         <div className="menu-container">
@@ -142,14 +210,35 @@ export const Menu = () =>{
             </div>
             <h2 style={{fontWeight:'bold',fontSize:'35px'}}>Opening this week <i className="bi bi-chevron-right"></i></h2>
             <div className="cards"> 
-                <div className="fourcard"></div>
-                <div className="fourcard"></div>
-                <div className="fourcard"></div>
-                <div className="fourcard"></div>
-                <div className="fourcard"></div>
-                <div className="fourcard"></div>
-                <div className="fourcard"></div>
-                <div className="fourcard"></div>
+                {Movie.map(item=>{
+                    return(
+                        <div className="fourcard" key={item.id}>
+                            <img src={item.img} alt="" />
+                            <div className="dark-overly">
+                                <button style={{
+                                    width:'30%',
+                                    height:'5vh',
+                                    position:'absolute',
+                                    right:'0',
+                                    border:'none',
+                                    borderBottomLeftRadius:'10px',
+                                    borderTopLeftRadius:'10px',
+                                    top:'5%',
+                                    fontSize:'20px',
+                                    fontWeight:'bold',
+                                    backgroundColor:'green',
+                                    color:"#fff",
+                                    }} className="addition">{item.price}</button>
+                                <h2>{item.text}</h2>
+                                <div className="flexbox">
+                                    <h3><i class="bi bi-calendar-week"></i> {item.data}</h3>
+                                    <h3><i className="bi bi-star-fill"></i> {item.rate}</h3>
+                                </div>
+                                <button className="view">View</button>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
                     <div className="twiceabout">
                     <div className="aboutfilm">
@@ -174,7 +263,7 @@ export const Menu = () =>{
                             <h3>
                                 <button style={{
                                     fontSize:'13px',
-                                    borderRadius:'5px',width:'33%',
+                                    borderRadius:'5px',
                                     height:'4vh',
                                     color:'red',
                                     backgroundColor:'black',
@@ -184,7 +273,7 @@ export const Menu = () =>{
                                    }}>Dramma</button>
                                 <button style={{
                                     fontSize:'13px',
-                                    borderRadius:'5px',width:'33%',
+                                    borderRadius:'5px',
                                     height:'4vh',
                                     color:'red',
                                     backgroundColor:'black',
@@ -194,7 +283,7 @@ export const Menu = () =>{
                                    }}>Fantastic</button>
                                 <button style={{
                                     fontSize:'13px',
-                                    borderRadius:'5px',width:'33%',
+                                    borderRadius:'5px',
                                     height:'4vh',
                                     color:'red',
                                     backgroundColor:'black',
